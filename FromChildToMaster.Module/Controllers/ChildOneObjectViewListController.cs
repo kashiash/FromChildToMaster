@@ -60,7 +60,7 @@ namespace FromChildToMaster.Module.Controllers
             if (currentMaster != null)
             {
                 FillGroupListAction();
-                currentMaster.ChildTwoCollection.CollectionChanged += ChildTwoCollection_CollectionChanged;
+             //   currentMaster.ChildTwoCollection.CollectionChanged += ChildTwoCollection_CollectionChanged;
                 currentMaster.ChildTwoCollection.ListChanged += ChildTwoCollection_ListChanged;
             }
         }

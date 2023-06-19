@@ -16,6 +16,7 @@ namespace FromChildToMaster.Module.BusinessObjects
         { }
 
 
+        string name;
         string notes;
         Master master;
 
@@ -27,6 +28,13 @@ namespace FromChildToMaster.Module.BusinessObjects
         }
 
         
+        [Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        public string Name
+        {
+            get => name;
+            set => SetPropertyValue(nameof(Name), ref name, value);
+        }
+
         [Size(SizeAttribute.Unlimited)]
         public string Notes
         {

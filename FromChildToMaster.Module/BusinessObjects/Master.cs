@@ -43,7 +43,7 @@ namespace FromChildToMaster.Module.BusinessObjects
         {
             get
             {
-                return GetCollection<ChildOne>(nameof(ChildOne));
+                return GetCollection<ChildOne>(nameof(ChildOneCollection));
             }
         }
 

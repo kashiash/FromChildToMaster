@@ -61,7 +61,13 @@ namespace FromChildToMaster.Module.Controllers
             {
                 FillGroupListAction();
                 currentMaster.ChildTwoCollection.CollectionChanged += ChildTwoCollection_CollectionChanged;
+                currentMaster.ChildTwoCollection.ListChanged += ChildTwoCollection_ListChanged;
             }
+        }
+
+        private void ChildTwoCollection_ListChanged(object sender, System.ComponentModel.ListChangedEventArgs e)
+        {
+            FillGroupListAction();
         }
 
         private void ChildTwoCollection_CollectionChanged(object sender, DevExpress.Xpo.XPCollectionChangedEventArgs e)

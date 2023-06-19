@@ -19,10 +19,7 @@ namespace FromChildToMaster.Module.Controllers
                 {
                     ((NestedListViewFrameController)c).AssignMasterFrame(Frame);
                 }
-                if ( c is ChildTwoObjectViewListController)
-                {
-                    ((ChildTwoObjectViewListController)c).AssignMasterFrame(Frame);
-                }
+
             }
         }
         private void lpe_FrameChanged(object sender, EventArgs e)

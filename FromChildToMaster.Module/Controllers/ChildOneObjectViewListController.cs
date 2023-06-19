@@ -70,10 +70,10 @@ namespace FromChildToMaster.Module.Controllers
             FillGroupListAction();
         }
 
-        private void ChildTwoCollection_CollectionChanged(object sender, DevExpress.Xpo.XPCollectionChangedEventArgs e)
-        {
-            FillGroupListAction();
-        }
+        //private void ChildTwoCollection_CollectionChanged(object sender, DevExpress.Xpo.XPCollectionChangedEventArgs e)
+        //{
+        //    FillGroupListAction();
+        //}
 
         public void FillGroupListAction()
         {
